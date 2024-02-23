@@ -1,7 +1,10 @@
+// Include mongoose package.
 var mongoose = require('mongoose');
+
+// Include Schema from mongoose package.
 var schema = mongoose.Schema;
 
-
+// Create Schema for RegistrationProject table for student.
 var studentSchema = new schema({
 
     firstname:{
@@ -22,4 +25,5 @@ var studentSchema = new schema({
     },
 })
 
+// Export student schema.
 module.exports = mongoose.model('student', studentSchema);

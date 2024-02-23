@@ -1,7 +1,8 @@
+// Include Student Schema.
 var studentModel = require('./studentModel.js');
+// Set key for encryption.
 var key  = '123456789swarupa';
 var encryptor = require('simple-encryptor')(key);
-
 module.exports.createStudentDBService = (studentDetails)=>{
 
     return new Promise(async function  myFn(resolve, reject){
